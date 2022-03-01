@@ -32,7 +32,7 @@ class ServiceFragment : Fragment(), MainAdapter.ItemClickListner {
 
 
     lateinit var sharedCommonPref: Shared_Common_Pref
-    val apiInterface: ApiService = ApiClient.getClient().create(ApiService::class.java)
+    val apiInterface: ApiService = ApiClient.client!!.create(ApiService::class.java)
     lateinit var adapter: MainAdapter
     lateinit var frameLayout: FrameLayout
 

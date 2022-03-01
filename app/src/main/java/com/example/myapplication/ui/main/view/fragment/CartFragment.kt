@@ -31,7 +31,7 @@ class CartFragment : Fragment() {
     lateinit var sharedCommonPref: Shared_Common_Pref
 
 
-    val apiInterface: ApiService = ApiClient.getClient().create(ApiService::class.java)
+    val apiInterface: ApiService = ApiClient.client!!.create(ApiService::class.java)
     lateinit var adapter: CartListAdapter
 
     lateinit var values: ArrayList<Cart_DATA>

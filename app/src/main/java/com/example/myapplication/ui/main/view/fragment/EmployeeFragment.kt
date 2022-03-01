@@ -49,7 +49,7 @@ class EmployeeFragment : Fragment(), CartAdapter.ItemSelectedListner {
 
     lateinit var sharedCommonPref: Shared_Common_Pref
 
-    val apiInterface: ApiService = ApiClient.getClient().create(ApiService::class.java)
+    val apiInterface: ApiService = ApiClient.client!!.create(ApiService::class.java)
     lateinit var adapter: CartAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
