@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/llcartParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="hhhg"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="@+id/imageView" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="hhhg"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="@+id/imageView" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
